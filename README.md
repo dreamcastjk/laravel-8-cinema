@@ -13,9 +13,38 @@ php >= 7.4
 mysql >= 5.7 or MariaDB >= 10.3
 ```
 
+#### PHP extensions
+```shell script
+sudo apt install php7.4-common php7.4-json php7.4-mysql php7.4-xml php7.4-xmlrpc php7.4-curl php7.4-gd imagemagick php7.4-cli php7.4-dev php7.4-imap php7.4-mbstring php7.4-opcache php7.4-soap php7.4-zip php7.4-intl -y
+```
+
+#### Configs
+```shell script
+cp .env.example .env - configure database access
+```
+
+```shell script
+composer install
+php artisan migrate || php artisan migrate:fresh --seed 
+php artisan key:generate
+npm install
+npm run dev
+npm run production
+```
+
 # IDE Helper
 ```shell script
 php artisan ide-helper:generate - PHPDoc generation for Laravel Facades
 php artisan ide-helper:models - PHPDocs for models
 php artisan ide-helper:meta - PhpStorm Meta file
+```
+
+#### Tests
+```shell script
+Создать тестовую БД
+
+cp .env.testing.example .env.testing #заполняем актуальными конфигами
+php artisan migrate:fresh --env=testing #накат миграций на тестовую БД
+php artisan key:generate --env=testing #генерация ключа приложения на тесты
+php artisan test --env=testing #запуск тестов
 ```
