@@ -48,3 +48,8 @@ php artisan migrate:fresh --env=testing #накат миграций на тес
 php artisan key:generate --env=testing #генерация ключа приложения на тесты
 php artisan test --env=testing #запуск тестов
 ```
+
+### Telescope
+```shell script
+Access route to telescope - /telescope. For local env only.
+```
