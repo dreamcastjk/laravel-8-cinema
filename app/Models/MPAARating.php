@@ -2,11 +2,11 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 /**
- * App\Models\MPAARating
+ * App\Models\MPAARating.
  *
  * @property int $id
  * @property string $title
@@ -14,6 +14,7 @@ use Illuminate\Database\Eloquent\Model;
  * @property string $description
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
+ *
  * @method static \Illuminate\Database\Eloquent\Builder|MPAARating newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|MPAARating newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|MPAARating query()

@@ -2,12 +2,12 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 /**
- * App\Models\MovieInfo
+ * App\Models\MovieInfo.
  *
  * @property int $id
  * @property int $movie_id
@@ -23,6 +23,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
  * @property-read \App\Models\Movie $movie
+ *
  * @method static \Illuminate\Database\Eloquent\Builder|MovieInfo newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|MovieInfo newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|MovieInfo query()
